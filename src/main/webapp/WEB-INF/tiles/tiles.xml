@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="apps" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/apps.jsp" />
+	</definition>
+
+	<definition name="music" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/music.jsp" />
+	</definition>
+
+	<definition name="addMusic" extends="baseLayout">
+		<put-attribute name="title" value="Add Music" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadMusic.jsp" />
+	</definition>
+
+	<definition name="singleAlbum" extends="baseLayout">
+		<put-attribute name="title" value="Single Album" />
+		<put-attribute name="body" value="/WEB-INF/views/SingleAlbum.jsp" />
+	</definition>
+
+	<definition name="news" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/news.jsp" />
+	</definition>
+
+	<definition name="singlenews" extends="baseLayout">
+		<put-attribute name="title" value="Single News" />
+		<put-attribute name="body" value="/WEB-INF/views/singlenews.jsp" />
+	</definition>
+
+	<definition name="photo" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/photo.jsp" />
+	</definition>
+
+	<definition name="addPhoto" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/upload.jsp" />
+	</definition>
+
+	<definition name="video" extends="baseLayout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/video.jsp" />
+	</definition>
+
+	<definition name="uploadYouTube" extends="baseLayout">
+		<put-attribute name="title" value="Upload YouTube" />
+		<put-attribute name="body" value="/WEB-INF/views/uploadYTVideo.jsp" />
+	</definition>
+
+	<definition name="singlevideo" extends="baseLayout">
+		<put-attribute name="title" value="Upload YouTube" />
+		<put-attribute name="body" value="/WEB-INF/views/singleVideo.jsp" />
+	</definition>
+
+	<definition name="about" extends="baseLayout">
+		<put-attribute name="title" value="About Us" />
+		<put-attribute name="body" value="/WEB-INF/views/about.jsp" />
+	</definition>
+
+	<definition name="contact" extends="baseLayout">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="body" value="/WEB-INF/views/contact.jsp" />
+	</definition>
+
+</tiles-definitions>  
