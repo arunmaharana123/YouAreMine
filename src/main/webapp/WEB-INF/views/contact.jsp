@@ -22,7 +22,7 @@
 			<div class="breadcrumb-fullscreen-parent phone-menu-bg">
 				<div
 					class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
-					style="background-image: url(<%=request.getContextPath()%>/resources/img/contact/demo.png);"
+					style="background-image: url(<%=request.getContextPath()%>/resources/img/arun/demo.png);"
 					data-stellar-background-ratio="0.5"
 					data-stellar-vertical-offset="0">
 					<div class="breadTxt">

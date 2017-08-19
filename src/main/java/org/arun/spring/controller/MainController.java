@@ -25,19 +25,33 @@ public class MainController {
 	@RequestMapping(value = "/home", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String getHome(Model model, HttpServletRequest request) {
 
-		List<News> news = service.getNews(0);
-		model.addAttribute("NewsList", news);
+		try {
+			List<News> news = service.getNews(0);
+			model.addAttribute("NewsList", news);
+		} catch (Exception e) {
+		}
 
-		List<Photo> photos = service.getPhotos(0);
-		model.addAttribute("PHOTOS", photos);
+		try {
+			List<Photo> photos = service.getPhotos(0);
+			model.addAttribute("PHOTOS", photos);
+		} catch (Exception e) {
+		}
 
-		List<Music> musics = service.getMusics();
-		model.addAttribute("MUSICS", musics);
+		List<Music> musics;
+		try {
+			musics = service.getMusics();
+			model.addAttribute("MUSICS", musics);
+			request.getSession().setAttribute("MUSICS", musics);
+		} catch (Exception e) {
+		}
 
-		List<MusicAlbum> musicsa = service.getAllAlbums(0);
-		model.addAttribute("MusicAlbums", musicsa);
+		try {
+			List<MusicAlbum> musicsa = service.getAllAlbums(0);
+			model.addAttribute("MusicAlbums", musicsa);
+		} catch (Exception e) {
+		}
 
-		request.getSession().setAttribute("MUSICS", musics);
+		
 
 		return "home";
 	}

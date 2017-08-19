@@ -29,7 +29,7 @@
 </section>
 <!-- =============== START HOME-BLOG SECTION ================ -->
 <section class="background-properties blogHomeSection"
-	style="background-image: url(<%=request.getContextPath()%>/resources/img/blog/blog-home.jpg);">
+	style="background-image: url(<%=request.getContextPath()%>/resources/img/arun/blog-home.jpg);">
 	<div class="container">
 		<div class="row">
 			<!-- end sectionTtile -->

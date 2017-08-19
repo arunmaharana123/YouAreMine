@@ -66,7 +66,7 @@
 					<div class="right-player-side">
 						<div class="mesh-thumbnail">
 							<img
-								src="<%=request.getContextPath()%>/resources/img/albums/cover3.jpg"
+								src="<%=request.getContextPath()%>/resources/img/arun/cover3.jpg"
 								alt="">
 						</div>
 						<div class="mesh-title"></div>

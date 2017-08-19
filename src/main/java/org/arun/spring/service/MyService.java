@@ -11,6 +11,7 @@ import org.arun.spring.model.News;
 import org.arun.spring.model.Photo;
 import org.arun.spring.model.Video;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,7 +20,7 @@ public class MyService {
 
 	@Autowired
 	DAO dao;
-
+	
 	// Main Transactions starts...................
 	@Transactional
 	public List<Object> getHome() {

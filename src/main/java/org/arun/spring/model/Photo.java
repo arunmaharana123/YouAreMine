@@ -15,7 +15,7 @@ import org.hibernate.annotations.NotFound;
  * This is our model class and it corresponds to Photo table in database
  */
 @Entity
-@Table(name = "Photo")
+@Table(name = "photo")
 public class Photo {
 
 	@Id

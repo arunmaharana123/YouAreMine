@@ -46,7 +46,7 @@
 	<!-- =============== STAR LOGO ================ -->
 	<div class="logo-container-top">
 		<a href="<c:url value='/home' />"><img
-			src="<%=request.getContextPath()%>/resources/img/logo/logo2.png"
+			src="<%=request.getContextPath()%>/resources/img/arun/logo2.png"
 			alt="YouAreMy"></a>
 	</div>
 	<!-- end logo-container-top -->

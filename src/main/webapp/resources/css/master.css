@@ -12185,6 +12185,20 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
 .topHeaderShop .open-menu span {
   background: #000!important;
 }
+@media (max-width: 700px){
+	.topHeader{
+	  position: fixed;
+	  top: 0;
+	  padding-bottom: 1.8rem;
+	  width: 100%;
+	  padding: 0.5rem 0rem;
+	  z-index: 4;
+	}
+	.logo-container-top{
+	 display: none;
+	}
+}
+
 .topHeader {
   position: fixed;
   top: 0;
@@ -12207,7 +12221,7 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
 .logo-container-top {
   float: left;
   z-index: 1;
-  top: 3px;
+  top: -20px;
   position: relative;
 }
 .logo-container-top img {

@@ -9,7 +9,7 @@
 			<div class="breadcrumb-fullscreen-parent phone-menu-bg">
 				<div
 					class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
-					style="background-image: url('<%=request.getContextPath()%>/resources/img/starHomePage/urm_back3.jpg');"
+					style="background-image: url('<%=request.getContextPath()%>/resources/img/arun/urm_back3.jpg');"
 					data-stellar-background-ratio="0.5"
 					data-stellar-vertical-offset="0">
 					<div id="home" style="position: absolute; left: 0; top: 0;">

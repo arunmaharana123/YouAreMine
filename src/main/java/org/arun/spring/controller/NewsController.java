@@ -1,17 +1,26 @@
 package org.arun.spring.controller;
 
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.arun.spring.model.CategoryNews;
 import org.arun.spring.model.News;
+import org.arun.spring.scheduler.MyJob;
 import org.arun.spring.service.MyService;
 import org.arun.spring.utility.JsonReader;
 import org.arun.spring.utility.UploadFile;
 import org.json.JSONException;
+import org.quartz.CronTrigger;
+import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.SchedulerFactory;
+import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -228,4 +237,23 @@ public class NewsController {
 
 		return "redirect:/recentnews";
 	}
+
+	@Scheduled(fixedDelay = 60000*60)
+	public void getUpdateNews() throws IOException, JSONException {
+
+		List<News> news = JsonReader.getData("");
+		int i = 0;
+		for (News news2 : news) {
+			boolean result = service.getNewsTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addNews(news2);
+			}
+
+		}
+		System.out.println("News Updated Successfully");
+	}
+
 }
