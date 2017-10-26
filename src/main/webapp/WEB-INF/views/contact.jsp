@@ -22,7 +22,7 @@
 			<div class="breadcrumb-fullscreen-parent phone-menu-bg">
 				<div
 					class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
-					style="background-image: url(<%=request.getContextPath()%>/resources/img/arun/demo.png);"
+					style="background-image: url(<%=request.getContextPath()%>/resources/img/arun/contactMap.png);"
 					data-stellar-background-ratio="0.5"
 					data-stellar-vertical-offset="0">
 					<div class="breadTxt">
@@ -53,19 +53,25 @@
 			<div class="col-sm-4">
 				<div class="contactTop">
 					<h2>Contact Information</h2>
+					<h4>New Sangavi</h4>
+					<h4>Pune</h4>
+					<h4>Maharashtra</h4>
+					<h4>India</h4>
+					<hr>
 					<h4>36 Kumarpani</h4>
 					<h4>Sheragada</h4>
 					<h4>Ganjam</h4>
 					<h4>Odisha 761106</h4>
-
+					<hr>
 					<div class="contactInfo">
 						<ul>
-							<li style="text-transform:none">Email: <a href="#">info@youaremine.com</a></li>
-							<li style="text-transform:none">Mobile: <a href="#">+91 9011822778</a></li>
-							<li style="text-transform:none">Facebook: <a href="#">https://facebook.com/youaremy</a></li>
-							<li style="text-transform:none">Instagram: <a href="#">https://instagram.com/youaremy</a></li>
-							<li style="text-transform:none">Twitter: <a href="#">https://twitter.com/youaremy</a></li>
-							<li style="text-transform:none">Google+: <a href="#">https://plus.google.com/youaremy</a></li>
+							<li style="text-transform: none">Email: <a href="#">info@youaremine.com</a></li>
+							<li style="text-transform: none">Mobile: <a href="#">+91
+									9011822778</a></li>
+							<li style="text-transform: none">Facebook: <a href="#">https://facebook.com/youaremy</a></li>
+							<li style="text-transform: none">Instagram: <a href="#">https://instagram.com/youaremy</a></li>
+							<li style="text-transform: none">Twitter: <a href="#">https://twitter.com/youaremy</a></li>
+							<li style="text-transform: none">Google+: <a href="#">https://plus.google.com/youaremy</a></li>
 						</ul>
 					</div>
 				</div>

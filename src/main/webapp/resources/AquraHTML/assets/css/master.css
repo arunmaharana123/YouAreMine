@@ -2966,6 +2966,7 @@ select[multiple].input-lg {
   height: 34px;
   line-height: 34px;
   text-align: center;
+  pointer-events: none;
 }
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
@@ -3225,6 +3226,7 @@ fieldset[disabled] .btn {
 }
 a.btn.disabled,
 fieldset[disabled] a.btn {
+  pointer-events: none;
 }
 .btn-default {
   color: #333;
@@ -4037,6 +4039,7 @@ tbody.collapse.in {
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
+  pointer-events: none;
 }
 .input-group {
   position: relative;
@@ -10148,7 +10151,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/diskgif.gif) no-repeat center center;
+  background: url(../img/content/disk.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon1 .disk {
@@ -10184,7 +10187,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/diskgif1.gif) no-repeat center center;
+  background: url(../img/content/disk3.png) no-repeat center center;
   z-index: 9;
 }
 @media only screen and (max-width: 1025px) {
@@ -12185,20 +12188,6 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
 .topHeaderShop .open-menu span {
   background: #000!important;
 }
-@media (max-width: 700px){
-	.topHeader{
-	  position: fixed;
-	  top: 0;
-	  padding-bottom: 1.8rem;
-	  width: 100%;
-	  padding: 0.5rem 0rem;
-	  z-index: 4;
-	}
-	.logo-container-top{
-	 display: none;
-	}
-}
-
 .topHeader {
   position: fixed;
   top: 0;
@@ -12221,7 +12210,7 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
 .logo-container-top {
   float: left;
   z-index: 1;
-  top: -20px;
+  top: 3px;
   position: relative;
 }
 .logo-container-top img {
@@ -15234,7 +15223,6 @@ p a {
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
-  height : 70%;
   -webkit-transform-style: preserve-3d;
 }
 .owl-carousel.owl-text-select-on .owl-item {
