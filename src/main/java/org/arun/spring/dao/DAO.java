@@ -170,8 +170,8 @@ public class DAO {
 		Session session = this.sessionFactory.getCurrentSession();
 		Criteria criteria = session.createCriteria(Video.class);
 		criteria.addOrder(Order.desc("id"));
-		criteria.setFirstResult(count * 15);
-		criteria.setMaxResults(15);
+		criteria.setFirstResult(count * 30);
+		criteria.setMaxResults(30);
 		List<Video> vdos = criteria.list();
 		return vdos;
 	}

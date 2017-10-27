@@ -8,11 +8,10 @@
 		<!-- start blog-filter-category -->
 		<div class="col-sm-12">
 			<div class="sectionTitle">
-				<span class="heading-t3"></span>
 				<div class="">
 					<form action="searchYouTube" method="get" class="comment-form">
 						<input id="q" name="q" type="text" value="${keyWord }"
-							placeholder="type and hit Enter">
+							placeholder="Search Here...">
 
 					</form>
 				</div>
@@ -65,43 +64,46 @@
 	</div>
 	<!-- end row -->
 </section>
-<c:if test="${CategoryForward eq null }">
-	<c:if test="${fn:length(VideoList) == 15 }">
-		<div class="container" align="right">
-			<ul class="pagination pagination-lg">
-				<li><a href="<c:url value='/video?page=${PageCount }' />"
-					class="but_ok_2"><i class="fa fa-arrow-right fa-lg"></i>&nbsp;
-						Next</a></li>
-			</ul>
-		</div>
-	</c:if>
+<c:if test="${keyWord eq null }">
+	<c:if test="${CategoryForward eq null }">
+		<c:if test="${fn:length(VideoList) == 30 }">
+			<div class="container" align="right">
+				<ul class="pagination pagination-lg">
+					<li><a href="<c:url value='/video?page=${PageCount }' />"
+						class="but_ok_2"><i class="fa fa-arrow-right fa-lg"></i>&nbsp;
+							Next</a></li>
+				</ul>
+			</div>
+		</c:if>
 
-	<c:if test="${fn:length(VideoList) != 15 }">
-		<div class="container" align="right">
-			<ul class="pagination pagination-lg">
-				<li><a href="#" class="but_ok_2"><i
-						class="fa fa-arrow-right fa-lg"></i>&nbsp; No More Videos</a></li>
-			</ul>
-		</div>
+		<c:if test="${fn:length(VideoList) != 30 }">
+			<div class="container" align="right">
+				<ul class="pagination pagination-lg">
+					<li><a href="#" class="but_ok_2"><i
+							class="fa fa-arrow-right fa-lg"></i>&nbsp; No More Videos</a></li>
+				</ul>
+			</div>
+		</c:if>
 	</c:if>
 </c:if>
-<%-- 
+<c:if test="${keyWord ne null }">
 
-<section class="aquraFilter" style="padding-top: 6em" id="content">
-	<div class="container" style="padding: 2em;">
-		<!-- start blog-filter-category -->
-		<div class="col-sm-12">
-			<div class="sectionTitle">
-				<span class="heading-t3"></span>
-				<div class="">
-					<form action="searchYouTube" method="get" class="comment-form">
-						<input id="q" name="q" type="text" value="${keyWord }"
-							placeholder="type and hit Enter">
+	<section class="aquraFilter" style="padding-top: 6em" id="content">
+		<div class="container" style="padding: 2em;">
+			<!-- start blog-filter-category -->
+			<div class="col-sm-12">
+				<div class="sectionTitle">
+					<span class="heading-t3"></span>
+					<div class="">
+						<form action="searchYouTube" method="get" class="comment-form">
+							<input id="q" name="q" type="text" value=""
+								placeholder="Search More Here...">
 
-					</form>
+						</form>
+					</div>
 				</div>
+				<!-- end contactForm -->
 			</div>
-			<!-- end contactForm -->
 		</div>
-	</div>
-</section> --%>
+	</section>
+</c:if>
