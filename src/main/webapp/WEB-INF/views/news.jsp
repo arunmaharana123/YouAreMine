@@ -22,7 +22,6 @@
 						Financial</a></li>
 				<li><a href="<c:url value='/newscategory/Technology' />">
 						Technology</a></li>
-				<li><a href="<c:url value='/updatenews' />"> Updated News</a></li>
 			</ul>
 		</div>
 	</div>
@@ -136,8 +135,6 @@
 						Financial</a></li>
 				<li><a href="<c:url value='/newscategory/Technology' />">
 						Technology</a></li>
-				<li><a href="<c:url value='/updatenews' />"> Updated News</a></li>
-				<li><a href="<c:url value='/updateAll' />"> Updated All</a></li>
 			</ul>
 		</div>
 	</div>
