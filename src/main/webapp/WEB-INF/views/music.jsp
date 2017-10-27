@@ -50,6 +50,9 @@
 				<li><a href="#" data-option-value=".new">New Release</a></li>
 				<li><a href="#" data-option-value=".best">Popular Songs</a></li>
 				<li><a href="#" data-option-value=".most">Hit Songs</a></li>
+				<c:if test="${ROLE eq 'ADMIN' }">
+					<li><a href="<c:url value='/addMusic' />">Upload Music</a></li>
+				</c:if>
 			</ul>
 		</div>
 		<!--end categories-->

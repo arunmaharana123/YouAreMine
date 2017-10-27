@@ -11,6 +11,12 @@
 		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
 	</definition>
 
+	<definition name="signup" extends="baseLayout">
+		<put-attribute name="title" value="SignUp | Login" />
+		<put-attribute name="body" value="/WEB-INF/views/signUp.jsp" />
+	</definition>
+
+
 	<definition name="home" extends="baseLayout">
 		<put-attribute name="title" value="Home" />
 		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />

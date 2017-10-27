@@ -3,6 +3,7 @@ package org.arun.spring.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.arun.spring.model.Music;
 import org.arun.spring.model.MusicAlbum;
@@ -25,6 +26,7 @@ public class MainController {
 	@RequestMapping(value = "/home", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String getHome(Model model, HttpServletRequest request) {
 
+		
 		try {
 			List<News> news = service.getNews(0);
 			model.addAttribute("NewsList", news);

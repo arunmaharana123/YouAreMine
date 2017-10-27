@@ -10,7 +10,8 @@
 			<ul class="clearfix">
 				<li><a href="<c:url value='/photocategory/Actors' />">Actors</a></li>
 				<li><a href="<c:url value='/photocategory/Actress' />">Actress</a></li>
-				<li><a href="<c:url value='/photocategory/Movie Poster' />">Movie Posters</a></li>
+				<li><a href="<c:url value='/photocategory/Movie Poster' />">Movie
+						Posters</a></li>
 				<li><a href="<c:url value='/photocategory/Abstract' />">Abstract</a></li>
 				<li><a href="<c:url value='/photocategory/Sci-Fi' />">Sci-Fi</a></li>
 				<li><a href="<c:url value='/photocategory/Vehicles' />">Vehicles</a></li>
@@ -19,7 +20,9 @@
 				<li><a href="<c:url value='/photocategory/Background' />">Background</a></li>
 				<li><a href="<c:url value='/photocategory/Nature' />">Nature</a></li>
 				<li><a href="<c:url value='/photocategory/HD' />">HD</a></li>
-				<%-- <li><a href="<c:url value='/addPhoto' />">Upload Images</a></li> --%>
+				<c:if test="${USERROLE eq 'ADMIN' }">
+					<li><a href="<c:url value='/addPhoto' />">Upload Images</a></li>
+				</c:if>
 			</ul>
 		</div>
 	</div>

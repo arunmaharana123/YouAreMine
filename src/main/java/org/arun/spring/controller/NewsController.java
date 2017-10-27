@@ -1,28 +1,20 @@
 package org.arun.spring.controller;
 
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.arun.spring.model.CategoryNews;
 import org.arun.spring.model.News;
-import org.arun.spring.scheduler.MyJob;
 import org.arun.spring.service.MyService;
 import org.arun.spring.utility.JsonReader;
 import org.arun.spring.utility.UploadFile;
 import org.json.JSONException;
-import org.quartz.CronTrigger;
-import org.quartz.JobDetail;
-import org.quartz.Scheduler;
-import org.quartz.SchedulerException;
-import org.quartz.SchedulerFactory;
-import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.ui.Model; 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
