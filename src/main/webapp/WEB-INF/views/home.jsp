@@ -65,7 +65,8 @@
 					<c:if test="${loop.count < 5 }">
 						<li class="col-md-3 col-sm-3 col-xs-12">
 							<div class="album-icon">
-								<span class="thumbs-album"> <a href="<c:url value='/singleAlbum?albumId=${music.id }' />"><img
+								<span class="thumbs-album"> <a
+									href="<c:url value='/singleAlbum?albumId=${music.id }' />"><img
 										style="height: 200px" src="${music.albumImage }"
 										class="attachment-album-thumbnail wp-post-image"
 										alt="album-cover-1"></a>
@@ -153,34 +154,19 @@
 		<div class="row">
 			<div class="sectionTitle">
 				<div class="sectionTitle paddingBottom">
-				<span class="heading-t3"></span>
-				<h2>
-					<a href="<c:url value='/video' />">Trending Videos</a>
-				</h2>
-				<span class="heading-b3"></span>
+					<span class="heading-t3"></span>
+					<h2>
+						<a href="<c:url value='/video' />">Trending Videos</a>
+					</h2>
+					<span class="heading-b3"></span>
+				</div>
 			</div>
-			</div>
-			<!-- end sectionTtile -->
-			<div class="col-sm-3" style="margin-bottom: 20px;">
-				<iframe width="90%" height="75px"
-					src="https://www.youtube.com/embed/YheC-4Qgoro" allowfullscreen></iframe>
-			</div>
-			<!-- end col-sm-3 -->
-			<div class="col-sm-3" style="margin-bottom: 20px;">
-				<iframe width="90%" height="75px"
-					src="https://www.youtube.com/embed/mm4JuMbtE9k" allowfullscreen></iframe>
-			</div>
-			<!-- end col-sm-3 -->
-			<div class="col-sm-3" style="margin-bottom: 20px;">
-				<iframe width="90%" height="75px"
-					src="https://www.youtube.com/embed/1YOfv5tIGwU" allowfullscreen></iframe>
-			</div>
-			<!-- end col-sm-3 -->
-			<div class="col-sm-3" style="margin-bottom: 20px;">
-				<iframe width="90%" height="75px"
-					src="https://www.youtube.com/embed/ym4EJQ7XORk" allowfullscreen></iframe>
-			</div>
-			<!-- end col-sm-3 -->
+			<c:forEach items="${Videos }" var="vdo" varStatus="loop">
+				<div class="col-sm-3" style="margin-bottom: 20px;">
+					<iframe width="90%" height="75px" src="${vdo.path }"
+						allowfullscreen></iframe>
+				</div>
+			</c:forEach>
 		</div>
 	</div>
 </section>

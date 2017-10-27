@@ -8,9 +8,9 @@ import org.arun.spring.model.Music;
 import org.arun.spring.model.MusicAlbum;
 import org.arun.spring.model.News;
 import org.arun.spring.model.Photo;
+import org.arun.spring.model.Video;
 import org.arun.spring.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,9 +37,8 @@ public class MainController {
 		} catch (Exception e) {
 		}
 
-		List<Music> musics;
 		try {
-			musics = service.getMusics();
+			List<Music> musics = service.getMusics();
 			model.addAttribute("MUSICS", musics);
 			request.getSession().setAttribute("MUSICS", musics);
 		} catch (Exception e) {
@@ -51,7 +50,11 @@ public class MainController {
 		} catch (Exception e) {
 		}
 
-		
+		try {
+			List<Video> videos = service.getVideos(0);
+			model.addAttribute("Videos", videos);
+		} catch (Exception e) {
+		}
 
 		return "home";
 	}
