@@ -10,13 +10,13 @@
 			<ul class="clearfix">
 				<!-- Menu Fixed Item -->
 				<li><a href="<c:url value='/home' />">home</a></li>
-				<li><a href="<c:url value='/recentnews' />">News</a></li>
+				<li><a href="<c:url value='/newscategory/India' />">News</a></li>
 				<li><a href="<c:url value='/photo' />">Photo</a></li>
 				<li><a href="<c:url value='/music' />">Music</a></li>
 				<li><a href="<c:url value='/video' />">Video</a></li>
-				<li><a href="<c:url value='/home' />">Apps</a></li>
-				<li><a href="<c:url value='/home' />">Contact</a></li>
-				<li><a href="<c:url value='/home' />">About</a></li>
+				<li><a href="<c:url value='/apps' />">Apps</a></li>
+				<li><a href="<c:url value='/contact' />">Contact</a></li>
+				<li><a href="<c:url value='/about' />">About</a></li>
 			</ul>
 		</div>
 	</div>
@@ -28,7 +28,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="copyFooter">
-						<a href="#">&copy; YouAreMy 2016-18</a>
+						<a href="#">&copy; URM Technology 2016-18</a>
 					</div>
 				</div>
 				<div class="col-sm-4">
@@ -39,11 +39,11 @@
 							<li><a href="#" class="icon-button shopIcon"><i
 									class="fa fa-facebook"></i><span></span></a></li>
 							<li><a href="#" class="icon-button shopIcon"><i
-									class="fa fa-apple"></i><span></span></a></li>
+									class="fa fa-instagram"></i><span></span></a></li>
 							<li><a href="#" class="icon-button shopIcon"><i
 									class="fa fa-lastfm"></i><span></span></a></li>
 							<li><a href="#" class="icon-button shopIcon"><i
-									class="fa fa-soundcloud"></i><span></span></a></li>
+									class="fa fa-google-plus"></i><span></span></a></li>
 							<li><a href="#" class="icon-button shopIcon"><i
 									class="fa fa-youtube-play"></i><span></span></a></li>
 							<li><a href="#" class="icon-button shopIcon"><i

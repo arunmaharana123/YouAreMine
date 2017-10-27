@@ -148,5 +148,4 @@
 	<!-- ================================================== -->
 </body>
 
-<!-- Mirrored from theme-brothers.com/AquraHTML/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 May 2017 06:32:25 GMT -->
 </html>

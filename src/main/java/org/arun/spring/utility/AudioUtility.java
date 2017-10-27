@@ -27,7 +27,7 @@ public class AudioUtility {
 			System.out.print("time in Minutes=   " + (duration / 60) + ":" + (duration % 60));
 			return (duration / 60) + ":" + (duration % 60);
 		} catch (Exception e) {
-System.out.println("Cathch");
+			System.out.println("Cathch");
 		}
 		return null;
 	}

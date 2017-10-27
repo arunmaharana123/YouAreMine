@@ -28,7 +28,7 @@
 			<ul>
 				<!-- Menu Fixed Item -->
 				<li><a href="<c:url value='/home' />">home</a></li>
-				<li><a href="<c:url value='/recentnews' />">News</a></li>
+				<li><a href="<c:url value='/newscategory/India' />">News</a></li>
 				<li><a href="<c:url value='/photo' />">Photo</a></li>
 				<li><a href="<c:url value='/music' />">Music</a></li>
 				<li><a href="<c:url value='/video' />">Video</a></li>
@@ -45,8 +45,8 @@
 	<!-- end menu-fixed-container -->
 	<!-- =============== STAR LOGO ================ -->
 	<div class="logo-container-top">
-		<a href="<c:url value='/home' />"><img
-			src="<%=request.getContextPath()%>/resources/img/arun/logo2.png"
+		<a href="<c:url value='/home' />"><img 
+			src="<%=request.getContextPath()%>/resources/img/arun/logo3.png" height="50px" width="50px" style="margin: 10px"
 			alt="YouAreMy"></a>
 	</div>
 	<!-- end logo-container-top -->

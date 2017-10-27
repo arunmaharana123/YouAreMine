@@ -238,18 +238,127 @@ public class NewsController {
 		return "redirect:/recentnews";
 	}
 
-	@Scheduled(fixedDelay = 60000*60)
+	@Scheduled(fixedDelay = 60000 * 60)
 	public void getUpdateNews() throws IOException, JSONException {
 
-		List<News> news = JsonReader.getData("");
+		List<News> news_recent = JsonReader.getData("");
 		int i = 0;
-		for (News news2 : news) {
+		for (News news2 : news_recent) {
 			boolean result = service.getNewsTitle(news2.getTitle());
 			if (result == false) {
 				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
 				if (img != null)
 					news2.setImage(img);
 				service.addNews(news2);
+			}
+
+		}
+		System.out.println("News Updated Successfully");
+
+		// Sports News Updated
+		List<CategoryNews> news = JsonReader.getSportsData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+
+		// World News Updated
+		news = JsonReader.getWorldData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+
+		// India News Updated
+		news = JsonReader.getIndiaData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+
+		// Movies News Updated
+		news = JsonReader.getMoviesData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+		// Economic News Updated
+		news = JsonReader.getEconomicData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+		// Business News Updated
+		news = JsonReader.getBusinessData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+		// Financial News Updated
+		news = JsonReader.getFinancialData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
+			}
+
+		}
+		// Tech News Updated
+		news = JsonReader.getTechData("");
+		i = 0;
+		for (CategoryNews news2 : news) {
+			boolean result = service.getNewsCategoryTitle(news2.getTitle());
+			if (result == false) {
+				String img = UploadFile.newsImageUpload(news2.getImage(), ++i);
+				if (img != null)
+					news2.setImage(img);
+				service.addCategoryNews(news2);
 			}
 
 		}
