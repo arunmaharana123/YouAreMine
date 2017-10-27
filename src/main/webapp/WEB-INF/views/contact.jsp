@@ -65,13 +65,12 @@
 					<hr>
 					<div class="contactInfo">
 						<ul>
-							<li style="text-transform: none">Email: <a href="#">info@youaremine.com</a></li>
-							<li style="text-transform: none">Mobile: <a href="#">+91
-									9011822778</a></li>
-							<li style="text-transform: none">Facebook: <a href="#">https://facebook.com/youaremy</a></li>
-							<li style="text-transform: none">Instagram: <a href="#">https://instagram.com/youaremy</a></li>
-							<li style="text-transform: none">Twitter: <a href="#">https://twitter.com/youaremy</a></li>
-							<li style="text-transform: none">Google+: <a href="#">https://plus.google.com/youaremy</a></li>
+							<li style="text-transform: none">Email: <a href="#">info@urmtechnology.com</a></li>
+							<li style="text-transform: none">Mobile: <a href="#">+91 9011822778, 9890888907</a></li>
+							<li style="text-transform: none">Facebook: <a href="#">https://facebook.com/URM.Technology</a></li>
+							<li style="text-transform: none">Instagram: <a href="#">https://instagram.com/URM.Technology</a></li>
+							<li style="text-transform: none">Twitter: <a href="#">https://twitter.com/URM.Technology</a></li>
+							<li style="text-transform: none">Google+: <a href="#">https://plus.google.com/URM.Technology</a></li>
 						</ul>
 					</div>
 				</div>

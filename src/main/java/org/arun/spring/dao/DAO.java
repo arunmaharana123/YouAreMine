@@ -43,8 +43,8 @@ public class DAO {
 		Session session = this.sessionFactory.getCurrentSession();
 		Criteria criteria = session.createCriteria(News.class);
 		criteria.addOrder(Order.desc("id"));
-		criteria.setFirstResult(count * 15);
-		criteria.setMaxResults(15);
+		criteria.setFirstResult(count * 30);
+		criteria.setMaxResults(30);
 		List<News> news = criteria.list();
 		return news;
 	}

@@ -85,7 +85,7 @@
 		</div>
 	</c:if>
 </c:if>
-
+<%-- 
 
 <section class="aquraFilter" style="padding-top: 6em" id="content">
 	<div class="container" style="padding: 2em;">
@@ -104,4 +104,4 @@
 			<!-- end contactForm -->
 		</div>
 	</div>
-</section>
+</section> --%>

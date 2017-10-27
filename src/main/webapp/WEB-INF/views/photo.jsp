@@ -10,8 +10,7 @@
 			<ul class="clearfix">
 				<li><a href="<c:url value='/photocategory/Actors' />">Actors</a></li>
 				<li><a href="<c:url value='/photocategory/Actress' />">Actress</a></li>
-				<li><a href="<c:url value='/photocategory/Movie Poster' />">Movie
-						Posters</a></li>
+				<li><a href="<c:url value='/photocategory/Movie Poster' />">Movie Posters</a></li>
 				<li><a href="<c:url value='/photocategory/Abstract' />">Abstract</a></li>
 				<li><a href="<c:url value='/photocategory/Sci-Fi' />">Sci-Fi</a></li>
 				<li><a href="<c:url value='/photocategory/Vehicles' />">Vehicles</a></li>
@@ -20,7 +19,7 @@
 				<li><a href="<c:url value='/photocategory/Background' />">Background</a></li>
 				<li><a href="<c:url value='/photocategory/Nature' />">Nature</a></li>
 				<li><a href="<c:url value='/photocategory/HD' />">HD</a></li>
-				<li><a href="<c:url value='/addPhoto' />">Upload Images</a></li>
+				<%-- <li><a href="<c:url value='/addPhoto' />">Upload Images</a></li> --%>
 			</ul>
 		</div>
 	</div>
@@ -43,7 +42,7 @@
 								<figure>
 									<!-- Single Album Image -->
 									<figcaption>
-										<div class="hovereffect" style="height: 310px;">
+										<div class="hovereffect" style="height: 310px; margin: 5px;">
 											<img class="img-responsive" style="height: 300px"
 												src="${photo.path }" alt="">
 											<div class="overlay">
@@ -99,7 +98,7 @@
 				<li><a href="<c:url value='/photocategory/Background' />">Background</a></li>
 				<li><a href="<c:url value='/photocategory/Nature' />">Nature</a></li>
 				<li><a href="<c:url value='/photocategory/HD' />">HD</a></li>
-				<li><a href="<c:url value='/addPhoto' />">Upload Images</a></li>
+				<%-- <li><a href="<c:url value='/addPhoto' />">Upload Images</a></li> --%>
 			</ul>
 		</div>
 	</div>

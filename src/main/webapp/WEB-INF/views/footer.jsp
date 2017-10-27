@@ -14,9 +14,9 @@
 				<li><a href="<c:url value='/photo' />">Photo</a></li>
 				<li><a href="<c:url value='/music' />">Music</a></li>
 				<li><a href="<c:url value='/video' />">Video</a></li>
-				<li><a href="<c:url value='/home' />">Apps</a></li>
-				<li><a href="<c:url value='/home' />">Contact</a></li>
-				<li><a href="<c:url value='/home' />">About</a></li>
+				<li><a href="<c:url value='/apps' />">Apps</a></li>
+				<li><a href="<c:url value='/contact' />">Contact</a></li>
+				<li><a href="<c:url value='/about' />">About</a></li>
 			</ul>
 		</div>
 	</div>

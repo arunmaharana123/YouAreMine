@@ -74,7 +74,7 @@
 	<!-- end row -->
 </section>
 <c:if test="${CategoryForward eq null }">
-	<c:if test="${fn:length(NewsList) == 15 }">
+	<c:if test="${fn:length(NewsList) == 30 }">
 		<div class="container" align="right">
 			<ul class="pagination pagination-lg">
 				<li><a href="<c:url value='/recentnews?page=${PageCount }' />"
@@ -84,7 +84,7 @@
 		</div>
 	</c:if>
 
-	<c:if test="${fn:length(NewsList) != 15 }">
+	<c:if test="${fn:length(NewsList) != 30 }">
 		<div class="container" align="right">
 			<ul class="pagination pagination-lg">
 				<li><a href="#" class="but_ok_2"><i
@@ -95,7 +95,7 @@
 </c:if>
 
 <c:if test="${CategoryForward ne null }">
-	<c:if test="${fn:length(NewsList) == 15 }">
+	<c:if test="${fn:length(NewsList) == 30 }">
 		<div class="container" align="right">
 			<ul class="pagination pagination-lg">
 				<li><a
@@ -106,7 +106,7 @@
 		</div>
 	</c:if>
 
-	<c:if test="${fn:length(NewsList) != 15 }">
+	<c:if test="${fn:length(NewsList) != 30 }">
 		<div class="container" align="right">
 			<ul class="pagination pagination-lg">
 				<li><a href="#" class="but_ok_2"><i

@@ -67,7 +67,7 @@
 							<div class="album-icon">
 								<span class="thumbs-album"> <a
 									href="<c:url value='/singleAlbum?albumId=${music.id }' />"><img
-										style="height: 200px" src="${music.albumImage }"
+										style="height: 200px; width: 100%;" src="${music.albumImage }"
 										class="attachment-album-thumbnail wp-post-image"
 										alt="album-cover-1"></a>
 								</span> <span class="disk"></span>
@@ -162,10 +162,12 @@
 				</div>
 			</div>
 			<c:forEach items="${Videos }" var="vdo" varStatus="loop">
-				<div class="col-sm-3" style="margin-bottom: 20px;">
-					<iframe width="90%" height="75px" src="${vdo.path }"
-						allowfullscreen></iframe>
-				</div>
+				<c:if test="${loop.count < 9 }">
+					<div class="col-sm-3" style="margin-bottom: 20px;">
+						<iframe width="90%" height="75px" src="${vdo.path }"
+							allowfullscreen></iframe>
+					</div>
+				</c:if>
 			</c:forEach>
 		</div>
 	</div>
