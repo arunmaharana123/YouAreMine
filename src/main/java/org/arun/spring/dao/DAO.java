@@ -102,8 +102,8 @@ public class DAO {
 		Criteria criteria = session.createCriteria(CategoryNews.class);
 		criteria.add(Restrictions.like("category", category, MatchMode.ANYWHERE));
 		criteria.addOrder(Order.desc("id"));
-		criteria.setFirstResult(count * 15);
-		criteria.setMaxResults(15);
+		criteria.setFirstResult(count * 30);
+		criteria.setMaxResults(30);
 		List<CategoryNews> news = criteria.list();
 		return news;
 	}
