@@ -52,7 +52,7 @@
 							and Web Applications in Java Technology.
 						</p>
 						<img style="height: 100px; width: 100px; border-radius: 50%;"
-							src="<%=request.getContextPath()%>/resources/img/arun/arun.jpg"
+							src="<%=request.getContextPath()%>/resources/img/arun/bhushan.jpg"
 							alt="Bhushan Darandale">
 						<p>
 							<b>Bhushan Darandale</b> : Received a Bachelor of Engineering
