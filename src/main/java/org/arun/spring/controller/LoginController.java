@@ -26,9 +26,9 @@ public class LoginController {
 
 		if (StringUtils.isNotBlank(username) && StringUtils.isNotBlank(password)) {
 			if (username.equals("arun") && password.equals("arun")) {
-				if (UserSession.session == null) {
-					UserSession.session = request.getSession();
-					System.out.println(UserSession.session.getId());
+				if (UserSession.getInstance().session == null) {
+					UserSession.getInstance().session = request.getSession();
+					System.out.println(UserSession.getInstance().session.getId());
 				}
 			}
 		}
@@ -39,8 +39,8 @@ public class LoginController {
 	@RequestMapping(value = "/logout", method = RequestMethod.GET, headers = "Accept=application/json")
 	public String logout(Model model, HttpServletRequest request) {
 
-		UserSession.session.invalidate();
-		UserSession.session = null;
+		UserSession.getInstance().session.invalidate();
+		UserSession.getInstance().session = null;
 		return "redirect:/home";
 	}
 

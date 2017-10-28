@@ -19,11 +19,10 @@ public class LoginInterceptor implements HandlerInterceptor {
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-
-		if (UserSession.session != null) {
-			UserSession.session.setAttribute("SESSION", "TRUE");
-			UserSession.session.setAttribute("USERNAME", "ARUN MAHARANA");
-			UserSession.session.setAttribute("USERROLE", "ADMIN");
+		if (UserSession.getInstance().session != null) {
+			UserSession.getInstance().session.setAttribute("SESSION", "TRUE");
+			UserSession.getInstance().session.setAttribute("USERNAME", "ARUN MAHARANA");
+			UserSession.getInstance().session.setAttribute("USERROLE", "ADMIN");
 		}
 
 	}
